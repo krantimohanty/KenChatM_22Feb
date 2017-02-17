@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/attachment"
+        android:icon="@drawable/white_attach"
+        android:orderInCategory="101"
+        android:title="Attachment"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_men"
+        android:orderInCategory="100"
+        android:title="Data"
+        app:showAsAction="always">
+
+        <item
+            android:id="@+id/new_group"
+            android:title="New Group"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/change_status"
+            android:title="Status"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/chat_settings"
+            android:title="Settings"
+            app:showAsAction="never" />
+
+    </item>
+</menu>

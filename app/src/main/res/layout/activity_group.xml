@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.kencloud.workchat.GroupActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:contentInsetLeft="0dp"
+        app:elevation="6dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ListView
+android:layout_marginLeft="10dp"
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listFooter"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="65dp"
+        android:transcriptMode="alwaysScroll" />
+
+    <LinearLayout
+        android:id="@+id/listFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/messageInput"
+            android:background="@drawable/edit_text_background"
+            android:layout_width="316dp"
+            android:padding="7dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dip"
+            android:inputType="textShortMessage"
+            android:lines="1"
+            android:singleLine="true" />
+
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_send" />
+    </LinearLayout>
+
+
+</RelativeLayout>

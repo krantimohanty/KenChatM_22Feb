@@ -1,0 +1,5 @@
+1. Display Contact Number issue on Contacts tab screen
+2. Attachment Issue in Chat Conversation Screen
+3. Create New Group (Contacts Selection) Issue.
+4. Display Device ID on Group Chat Screen
+

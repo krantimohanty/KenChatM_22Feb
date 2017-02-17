@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.kencloud.workchat.ProfileEditActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:contentInsetLeft="0dp"
+        app:elevation="6dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+
+
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profilepic"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_contact_picture_180_holo_light" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/user_profile_camera"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignBottom="@+id/profilepic"
+                        android:layout_alignLeft="@+id/profilepic"
+                        android:layout_alignStart="@+id/profilepic"
+                        android:layout_marginLeft="86dp"
+                        android:layout_marginStart="86dp"
+                        android:background="@color/transparent"
+                        android:clickable="true"
+                        android:src="@drawable/ic_action_camera_new" />
+
+                </RelativeLayout>
+
+
+                    <TextView
+                        android:drawableRight="@drawable/ic_edit"
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="30dp"
+                        android:drawablePadding="16dp"
+                        android:fontFamily="san-serif"
+                        android:padding="10dp"
+                        android:background="@drawable/text_box"
+                        android:text="Suchismita prusty"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_large_head" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/color_white"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/details"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:fontFamily="san-serif"
+                        android:padding="10dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="status and phone"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_head" />
+                    <TextView
+                        android:textColor="@color/black"
+                        android:id="@+id/status"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:drawablePadding="16dp"
+                        android:fontFamily="san-serif"
+                        android:padding="10dp"
+                        android:text="Hello"
+                        android:singleLine="true"
+                        android:textSize="16dp" />
+                    <View
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/grey" />
+                    <TextView
+                        android:textColor="@color/black"
+                        android:id="@+id/mobileNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:drawablePadding="16dp"
+                        android:fontFamily="san-serif"
+                        android:padding="10dp"
+                        android:text="+91 9089765567"
+                        android:inputType="phone"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_head" />
+                </LinearLayout>
+</LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>
+
+
+
+

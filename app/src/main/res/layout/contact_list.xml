@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <LinearLayout
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <LinearLayout
+                android:background="#fff"
+                android:id="@+id/enquiry_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <com.kencloud.workchat.app_widget.CircularImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pic_1"
+                    app:civ_border_color="@color/light_grey"
+                    app:civ_border_width="2dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/contact_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="17dp"
+                        android:layout_marginTop="3dp"
+                        android:ellipsize="end"
+
+                        android:lines="2"
+                        android:text="Sneha"
+                        android:textColor="@color/color_dark"
+                        android:textSize="@dimen/text_large_head"
+                        android:fontFamily="san-serif"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/contact_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="18dp"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:fontFamily="san-serif"
+                        android:text="@string/contact_no"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="@dimen/text_head"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

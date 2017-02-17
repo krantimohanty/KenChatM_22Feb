@@ -1,0 +1,81 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.kencloud.workchat.ChatHistoryActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:contentInsetLeft="0dp"
+        app:elevation="6dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ListView
+        android:layout_margin="12dp"
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listFooter"
+        android:layout_alignParentTop="true"
+        android:transcriptMode="alwaysScroll"
+        />
+
+    <RelativeLayout
+        android:id="@+id/listFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/messageInput"
+            android:background="@drawable/edit_text_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textShortMessage"
+            android:layout_centerVertical="true"
+            android:layout_alignTop="@+id/sendButton"
+            android:layout_alignBottom="@+id/sendButton"
+            android:layout_toLeftOf="@+id/sendButton"
+            android:padding="8dp"
+            android:layout_marginRight="12dp"
+            android:hint="Type a message" />
+
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/circle_green"
+            android:src="@drawable/ic_send_white_24dp" />
+    </RelativeLayout>
+</RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
